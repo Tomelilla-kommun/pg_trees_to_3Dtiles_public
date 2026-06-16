@@ -1,0 +1,34 @@
+{
+  "db": {
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dbname": "pg_test",
+    "user": "postgres",
+    "password": "password1234%",
+    "sslmode": "prefer"
+  },
+  "source_table": "globe.tommelilla_trees_small",
+  "source_table_height_column": "height",
+  "source_table_treemodels_column": "tree_texture",
+  "target_schema": "i3dm",
+  "target_table": "globe.tommelilla_trees_export_i3dm",
+  "fallback_model_name": "Lov_asp_1_cr.glb",
+  "fallback_model_height_m": 8.4,
+  "fallback_model_path": "data/cross/fallback",
+  "tree_models_mapping_path": "tree_models_mapping_cross.py",
+  "scale_multiplier": 1.0,
+  "fallback_epsg": 3008,  
+  "tag_columns": ["tree_id", "tree_class", "height"],
+  "recreate_target": true,
+  "run_export": true,
+  "export": {
+    "output_dir": "C:/work/tomelilla/pg_trees_to_3dtiles_sync/output/test01_gpu_cross",
+    "geometric_error": 700,
+    "geometry_column": "geom",
+    "max_features_per_tile": 2000,
+    "use_scale_non_uniform": false,
+    "use_gpu_instancing": true,
+    "use_external_model": false,
+    "extra_args": []
+  }
+}

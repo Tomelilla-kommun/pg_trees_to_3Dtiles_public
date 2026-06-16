@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.dylib
+*.dll
+.env
+.venv/
+venv/
+.env*/
+*.egg-info/
+.eggs/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+
+# Packaging / build
+build/
+dist/
+*.spec
+*.log
+pip-wheel-metadata/
+
+# PyInstaller
+*.manifest
+*.tmp
+*.bak
+__pyinstaller*/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local configs / outputs
+config.local.json
+output/
+tiles/
